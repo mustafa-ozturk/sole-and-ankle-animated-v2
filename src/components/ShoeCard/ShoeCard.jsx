@@ -81,7 +81,7 @@ const ImageWrapper = styled.div`
 const Image = styled.img`
   width: 100%;
   display: block;
-  transition: transform 600ms;
+  transition: transform 600ms, filter 600ms;
   transform-origin: 50% 75%;
   will-change: transform; // let browser know we will animate the image
 
@@ -89,7 +89,7 @@ const Image = styled.img`
     ${Link}:hover &,
     ${Link}:focus & {
       transform: scale(1.1);
-      transition: transform 200ms;
+      transition: transform 200ms, filter 200ms;
       filter: brightness(103%);
     }
   }
